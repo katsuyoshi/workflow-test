@@ -10,3 +10,4 @@ jobs:
     steps:
     - run: |
         rake
+        git commit -m "update!"
