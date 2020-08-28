@@ -2,7 +2,7 @@ name: Auto incremental value
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '0 0 * * *'
 
 jobs:
   say_hello:
