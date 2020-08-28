@@ -1,0 +1,12 @@
+name: Auto incremental value
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        rake
