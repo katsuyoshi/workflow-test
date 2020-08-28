@@ -9,5 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: |
+        git config user.name "workflow-test-bot"
+        git config user.email "kito@itosoft.com"
+        git remote set-url origin https://katsuyoshi:${{ secrets.GITHUB_PASS }}@github.com/katsuyoshi/write-code-everyday-bot-fork
+        git branch
+        git checkout master
+        git branch
         rake
         git commit -m "update!"
+        git push origin master
