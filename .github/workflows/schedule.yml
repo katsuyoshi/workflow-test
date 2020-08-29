@@ -1,6 +1,6 @@
 name: Auto incremental value
 
-#on:
+on:
 #  schedule:
 #    - cron: '*/5 * * * *'
 
