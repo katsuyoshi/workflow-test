@@ -2,7 +2,7 @@ name: Auto incremental value
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '*/5 * * * *'
 
 jobs:
   build:
