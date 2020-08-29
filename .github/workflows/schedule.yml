@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Increment value
-    - run: |
+      run: |
         git config user.name "workflow-test-bot"
         git config user.email "kito@itosoft.com"
         git remote set-url origin https://katsuyoshi:${{ secrets.GITHUB_PASS }}@github.com/katsuyoshi/write-code-everyday-bot-fork
