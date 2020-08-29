@@ -14,9 +14,6 @@ jobs:
           git config user.name "workflow-test-bot"
           git config user.email "kito@itosoft.com"
           git remote set-url origin https://katsuyoshi:${{ secrets.GITHUB_PASS }}@github.com/katsuyoshi/workflow-test
-          git branch
-          git checkout master
-          git branch
           rake
           git add .
           git commit -m "update!"
